@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Password Puzzle</title>
+</head>
+<body>
+	<div>
+		<table style="width: 100%;">
+			<tr>
+				<td><select id="pswd1" name="pswd1" style="width: 100%;">
+					<option value="YES">
+						YES
+					</option>
+					<option value="NO">
+						NO
+					</option>
+				</select></td>
+				<td><select id="pswd2" name="pswd2" style="width: 100%;">
+					<option value="YES">
+						YES
+					</option>
+					<option value="NO">
+						NO
+					</option>
+				</select></td>
+				<td><select id="pswd3" name="pswd3" style="width: 100%;">
+					<option value="YES">
+						YES
+					</option>
+					<option value="NO">
+						NO
+					</option>
+				</select></td>
+				<td><select id="pswd4" name="pswd4" style="width: 100%;">
+					<option value="YES">
+						YES
+					</option>
+					<option value="NO">
+						NO
+					</option>
+				</select></td>
+				<td><select id="pswd5" name="pswd5" style="width: 100%;">
+					<option value="YES">
+						YES
+					</option>
+					<option value="NO">
+						NO
+					</option>
+				</select></td>
+			</tr>
+		</table>
+		<table style="width: 100%; text-align: center;">
+			<tr>
+				<td><input onclick="checkPswd();" type="button" value="Submit"></td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript">
+	   function checkPswd() {
+	       
+	       var confirmPassword = "YES";
+	       var password = document.getElementById("pswd1").value;
+	       
+	       var confirmPassword = "YES";
+	       var password = document.getElementById("pswd2").value;
+	       
+	       var confirmPassword = "YES";
+	       var password = document.getElementById("pswd3").value;
+	       
+	       var confirmPassword = "YES";
+	       var password = document.getElementById("pswd4").value;
+	       
+	       var confirmPassword = "YES";
+	       var password = document.getElementById("pswd5").value;
+	       
+	       if (password == confirmPassword) {
+	            window.location="https://www.youtube.com/";
+	       }
+	       else{
+	           alert("Try again");
+	       }
+	   }
+	</script>
+</body>
+</html>
